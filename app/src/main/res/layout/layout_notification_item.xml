@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8dp"
+    android:background="@color/color_document_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/_8dp">
+
+    <com.royalitpark.employeemanagement.customviews.CirleImageView
+        android:id="@+id/img_not"
+        android:layout_width="@dimen/_42dp"
+        android:layout_height="@dimen/_42dp"
+        android:layout_margin="@dimen/_8dp"
+        android:src="@drawable/img_dummy_doc"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.royalitpark.employeemanagement.customviews.CustomTextView
+            android:id="@+id/txt_not_title"
+            style="@style/style_textview"
+            android:layout_margin="@dimen/_0dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Leave Requested"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+
+
+        <com.royalitpark.employeemanagement.customviews.CustomTextView
+            android:id="@+id/txt_not_msg"
+            style="@style/style_textview_small"
+            android:layout_below="@+id/txt_not_title"
+            android:layout_marginStart="@dimen/_2dp"
+            android:layout_marginTop="@dimen/_2dp"
+            android:layout_marginEnd="@dimen/_2dp"
+            android:layout_marginBottom="@dimen/_2dp"
+            android:text="Document_89256985.jpg"
+            android:textStyle="bold" />
+
+        <com.royalitpark.employeemanagement.customviews.CustomTextView
+            android:id="@+id/txt_not_date"
+            style="@style/style_textview_small"
+            android:layout_below="@+id/txt_not_msg"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="@dimen/_2dp"
+            android:layout_marginTop="@dimen/_3dp"
+            android:layout_marginEnd="@dimen/_2dp"
+            android:layout_marginBottom="@dimen/_2dp"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

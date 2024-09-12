@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.royalitpark.employeemanagement.customviews.CustomTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/_42dp"
+    android:minHeight="@dimen/_42dp"
+    android:padding="@dimen/_5dp"
+    android:gravity="center"
+    android:layout_margin="@dimen/_5dp"
+    android:id="@+id/txt_day"
+    android:textStyle="bold"
+    android:fontFamily="@font/montserrat_regular"
+
+    >
+
+</com.royalitpark.employeemanagement.customviews.CustomTextView>

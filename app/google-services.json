@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "315121468376",
+    "project_id": "employee-management-syst-8259e",
+    "storage_bucket": "employee-management-syst-8259e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315121468376:android:e9590db44d4bd9b141a8ad",
+        "android_client_info": {
+          "package_name": "com.royalitpark.employeemanagement"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCknXaK6kdmhRBa7CCtiwUxX9XAttGz54g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

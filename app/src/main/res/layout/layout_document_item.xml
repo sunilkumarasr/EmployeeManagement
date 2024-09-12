@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:layout_margin="@dimen/_8dp"
+              android:background="@color/color_document_bg"
+              android:padding="@dimen/_8dp"
+              >
+              <ImageView
+                            android:id="@+id/img_doc"
+                            android:layout_width="@dimen/_42dp"
+                            android:layout_height="@dimen/_42dp"
+                            android:src="@drawable/img_dummy_doc"
+                            android:layout_margin="@dimen/_8dp"
+                            />
+              <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_margin="@dimen/_8dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <com.royalitpark.employeemanagement.customviews.CustomTextView
+                                          android:id="@+id/txt_doc_title"
+                                          style="@style/style_textview"
+                                          android:text="Document_89256985.jpg"
+                                          android:textStyle="bold"
+                                          android:singleLine="true"
+                                          android:ellipsize="marquee"
+                                          android:textSize="@dimen/_16sp"
+                                          android:layout_margin="@dimen/_0dp"
+                                          />
+                            <com.royalitpark.employeemanagement.customviews.CustomTextView
+                                          android:id="@+id/txt_doc_desc"
+
+                                          style="@style/style_textview_small"
+                                          android:text="Document_89256985.jpg"
+                                          android:textStyle="bold"
+                                          />
+                            
+              </LinearLayout>
+              <ImageView
+                            android:id="@+id/img_doc_download"
+                            android:layout_width="@dimen/_36dp"
+                            android:layout_height="@dimen/_36dp"
+                            android:src="@drawable/img_download_doc"
+                            android:layout_margin="@dimen/_8dp"
+                            />
+
+</LinearLayout>

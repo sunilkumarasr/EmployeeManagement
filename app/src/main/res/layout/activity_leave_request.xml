@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.royalitpark.employeemanagement.ui.leaves.LeaveRequestActivity">
+    <LinearLayout
+        android:id="@+id/lnr_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTopBanner"
+        android:paddingLeft="@dimen/_16dp"
+        android:paddingRight="@dimen/_16dp"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:onClick="onBack"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_8dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_menu"
+                android:layout_width="@dimen/_24dp"
+                android:layout_height="@dimen/_24dp"
+                android:src="@drawable/img_back_left"
+
+                />
+        </LinearLayout>
+        <com.royalitpark.employeemanagement.customviews.CustomTextView
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/RequestLeave"
+            android:textSize="@dimen/_16sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/_12dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textColor="@color/white"
+            />
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_16dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.royalitpark.employeemanagement.customviews.CustomTextView
+                style="@style/style_textview"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fromdate"
+                />
+
+            <com.royalitpark.employeemanagement.customviews.CustomTextView
+                style="@style/style_textview"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/todate"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/input_pickip"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:onClick="fromDate"
+                android:focusable="false"
+                android:textSize="@dimen/_16sp"
+                android:drawablePadding="@dimen/_8dp"
+                android:fontFamily="@font/roboto_regular"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:text=""
+                android:minLines="1"
+                android:layout_margin="@dimen/_8dp"
+                android:background="@drawable/rectangle_edittext_bank"
+                android:padding="@dimen/_8dp"
+                android:drawableEnd="@drawable/img_icon_calender"
+                android:minHeight="40dp"
+                android:hint="@string/ddmmyy" />
+
+
+
+            <EditText
+                android:id="@+id/input_drop"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:onClick="toDate"
+                android:background="@drawable/rectangle_edittext_bank"
+                android:minHeight="40dp"
+                android:singleLine="false"
+                android:textSize="@dimen/_16sp"
+                android:fontFamily="@font/roboto_regular"
+                android:minLines="1"
+                android:padding="@dimen/_8dp"
+                android:hint="@string/ddmmyy"
+                android:layout_margin="@dimen/_8dp"
+
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:drawablePadding="@dimen/_8dp"
+                android:drawableEnd="@drawable/img_icon_calender"
+
+
+                />
+
+
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/check_half_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_halfday"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_regular"
+            />
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/_42dp"
+            android:layout_marginTop="@dimen/_12dp"
+            style="@style/SpinnerTheme"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/_20dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+android:id="@+id/edit_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_0dp"
+            android:background="@drawable/rectangle_edittext_bank"
+            android:minLines="3"
+            android:gravity="top"
+            android:padding="@dimen/_12dp"
+            android:maxLength="200"
+            android:hint="@string/ReasonofLeave"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="16dp"/>
+        <com.royalitpark.employeemanagement.customviews.CustomTextView
+            style="@style/style_textview"
+            android:text="@string/AddImage"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/_0dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:onClick="addImage"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="16dp"/>
+        <RelativeLayout
+            android:id="@+id/rel_leave_doc"
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="@dimen/_100dp"
+            android:background="@drawable/rectangle_order_border"
+            android:visibility="gone"
+            >
+        <ImageView
+            android:id="@+id/img_leave_doc"
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="@dimen/_100dp"
+
+            />
+            <ImageView
+                android:id="@+id/img_leave_doc_delete"
+                android:layout_width="@dimen/_24dp"
+                android:layout_margin="@dimen/_5dp"
+                android:layout_height="@dimen/_24dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_clear_black_24dp"
+
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatButton android:id="@+id/btn_allow"
+        style="@style/style_button"
+        android:layout_gravity="center"
+        android:text="@string/RequestLeave"
+        android:textColor="@color/black"
+        android:background="@drawable/rectangle_bio_data"
+        android:layout_width="match_parent"
+        android:onClick="requestLeave"
+        />
+</LinearLayout>

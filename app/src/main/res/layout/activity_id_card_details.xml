@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.royalitpark.employeemanagement.ui.profile.IdCardDetails">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/img_corner_rectangle_small"
+        android:paddingLeft="@dimen/_16dp"
+        android:paddingRight="@dimen/_16dp"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:onClick="onBack"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_8dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_menu"
+                android:layout_width="@dimen/_24dp"
+                android:layout_height="@dimen/_24dp"
+                android:src="@drawable/img_back_left"
+
+                />
+        </LinearLayout>
+        <com.royalitpark.employeemanagement.customviews.CustomTextView
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/idcard"
+            android:textSize="@dimen/_14sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/_12dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textColor="@color/white"
+            />
+
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+    <androidx.appcompat.widget.AppCompatButton android:id="@+id/btn_allow"
+        style="@style/style_button"
+        android:layout_gravity="center"
+        android:text="@string/sharebio"
+        android:textColor="@color/black"
+        android:background="@drawable/rectangle_bio_data"
+        android:layout_width="match_parent"
+        android:onClick="shareBio"
+        />
+
+</LinearLayout>

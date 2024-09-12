@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.royalitpark.employeemanagement.ui.dashboard.HomeAttendanceFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/_16dp"
+    android:visibility="gone"
+    android:paddingRight="@dimen/_16dp"
+    android:minHeight="?attr/actionBarSize"
+    android:layout_height="wrap_content">
+    <com.royalitpark.employeemanagement.customviews.CirleImageView
+        android:layout_width="@dimen/_42dp"
+        android:layout_height="@dimen/_42dp"
+        android:src="@drawable/account_circle_24"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="1dp" />
+    <com.royalitpark.employeemanagement.customviews.CustomTextView
+        android:id="@+id/txt_name"
+        style="@style/style_textview"
+        android:layout_weight="1"
+        android:text="My Name"
+
+        />
+    <LinearLayout
+        android:id="@+id/lnr_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8dp"
+        >
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notifications_active_24"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/_12dp"
+        android:layout_marginRight="@dimen/_12dp"
+        app:dividerColor="@color/color_light_white"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/img_corner_rectangle_small"
+    android:layout_height="?attr/actionBarSize">
+    <com.royalitpark.employeemanagement.customviews.CustomTextView
+        android:id="@+id/txt_date"
+        style="@style/style_textview"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:text="13th Sept"
+        />
+    <com.royalitpark.employeemanagement.customviews.CustomTextView
+        android:id="@+id/txt_status"
+        style="@style/style_textview"
+        android:layout_width="wrap_content"
+        android:text="Absent"
+        android:textColor="@color/red"
+
+        />
+</LinearLayout>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:dividerColor="@color/white"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_16dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"/>
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_200dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/mobile_search"
+        />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"/>
+        <com.royalitpark.employeemanagement.customviews.CustomTextView
+
+            style="@style/style_textview"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:text="@string/new_phone_detected"
+            android:textStyle="bold"
+
+            />
+
+        <com.royalitpark.employeemanagement.customviews.CustomTextView
+
+            style="@style/style_textview"
+            android:layout_width="wrap_content"
+            android:text="@string/request_your_domain_to"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/_16sp"
+            android:textColor="@color/colorPrimary"
+
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_request"
+            style="@style/style_button"
+            android:minEms="8"
+            android:text="@string/send_request"
+            />
+
+    </LinearLayout>
+</LinearLayout>

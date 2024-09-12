@@ -1,0 +1,243 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/_16dp"
+              tools:context="com.royalitpark.employeemanagement.ui.attendance.ShowAttendanceDetailsFragment">
+
+              <com.royalitpark.employeemanagement.customviews.CustomTextView
+                            android:id="@+id/txt_date"
+                           style="@style/style_textview"
+                            android:text="09 September"
+                            android:textStyle="bold"
+                            />
+             <LinearLayout
+                 android:id="@+id/lnr_present"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical"
+                           >
+                           <RadioButton
+                                         android:id="@+id/radio_present"
+                                         style="@style/radio_present"
+                                         android:text="@string/present"
+
+
+                                         />
+                           <LinearLayout
+                                         android:id="@+id/lnr_full_present"
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content">
+                                         <androidx.appcompat.widget.AppCompatRadioButton
+                                                       android:id="@+id/radio_full_day"
+                                                       style="@style/radio_present"
+                                                       android:text="@string/fullday"
+
+
+                                                       />
+                                         <androidx.appcompat.widget.AppCompatRadioButton
+                                                       android:id="@+id/radio_double_present"
+                                                       style="@style/radio_present"
+                                                       android:text="@string/double_fullday"
+                                                       android:minEms="10"
+                                             android:visibility="invisible"
+
+                                                       />
+                           </LinearLayout>
+                           <LinearLayout
+                                         android:id="@+id/lnr_absent"
+                               android:visibility="gone"
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content">
+                                         <androidx.appcompat.widget.AppCompatRadioButton
+                                                       android:id="@+id/radio_absent"
+                                                       style="@style/radio_absent"
+                                                       android:text="@string/absent"
+
+
+                                                       />
+                                         <androidx.appcompat.widget.AppCompatRadioButton
+                                                       android:id="@+id/radio_half_day"
+                                                       style="@style/radio_half_day"
+                                                       android:text="@string/half_day"
+                                             android:visibility="gone"
+
+                                                       />
+                                         <androidx.appcompat.widget.AppCompatRadioButton
+                                                       android:id="@+id/radio_day_off"
+                                                       style="@style/radio_day_half"
+                                                       android:text="@string/day_off"
+android:visibility="gone"
+
+                                                       />
+
+                           </LinearLayout>
+                 <TextView
+                     android:id="@+id/txt_message"
+                     android:layout_width="wrap_content"
+                     android:text="No Punch In/Out Activity"
+                     android:fontFamily="@font/montserrat_regular"
+                     android:layout_marginTop="@dimen/_5dp"
+                     android:textStyle="bold"
+                     android:visibility="gone"
+                     android:layout_height="wrap_content"/>
+             </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnr_leaves_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+              <com.google.android.material.divider.MaterialDivider
+                            android:layout_width="match_parent"
+                            android:layout_margin="@dimen/_12dp"
+                            android:layout_height="@dimen/_2dp"/>
+              <com.royalitpark.employeemanagement.customviews.CustomTextView
+                            android:id="@+id/txt_leaves"
+                            style="@style/style_textview"
+                            android:text="Leaves"
+                            android:textStyle="bold"
+                            />
+              <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <LinearLayout
+                                          android:id="@+id/lnr_leaves"
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content">
+                                          <androidx.appcompat.widget.AppCompatRadioButton
+                                                        android:id="@+id/radio_paid_leave"
+                                                        style="@style/radio_day_half"
+                                                        android:text="@string/paid_leave"
+
+
+                                                        />
+                                          <androidx.appcompat.widget.AppCompatRadioButton
+                                                        android:id="@+id/radio_hald_day_leave"
+                                                        style="@style/radio_day_half"
+                                                        android:text="@string/hald_day_leave"
+                                                        android:minEms="10"
+                                              android:visibility="gone"
+
+                                                        />
+
+                            </LinearLayout>
+                            <androidx.appcompat.widget.AppCompatRadioButton
+                                          android:id="@+id/radio_un_paid_leave"
+                                          style="@style/radio_unpaid"
+                                          android:text="@string/hald_un_paid_leave"
+android:minEms="10" android:visibility="gone"
+
+                                          />
+              </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnr_punhc_in_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+              <com.google.android.material.divider.MaterialDivider
+                            android:layout_width="match_parent"
+                            android:layout_margin="@dimen/_12dp"
+                            android:layout_height="@dimen/_2dp"/>
+              <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_margin="@dimen/_8dp"
+                            android:padding="@dimen/_8dp"
+                            >
+                            <com.royalitpark.employeemanagement.customviews.CirleImageView
+                                          android:id="@+id/img_not"
+                                          android:layout_width="@dimen/_42dp"
+                                          android:layout_height="@dimen/_42dp"
+                                android:visibility="invisible"
+                                          android:src="@drawable/img_dummy_doc"
+                                          android:layout_margin="@dimen/_8dp"
+                                          />
+                            <LinearLayout
+                                          android:layout_width="match_parent"
+                                          android:layout_margin="@dimen/_8dp"
+                                          android:orientation="vertical"
+                                          android:layout_weight="1"
+                                          android:layout_height="wrap_content">
+
+                               <LinearLayout
+                                   android:gravity="center_vertical"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content">
+                                   <com.royalitpark.employeemanagement.customviews.CustomTextView
+                                       android:id="@+id/txt_not_title"
+                                       style="@style/style_textview"
+                                       android:layout_width="wrap_content"
+                                       android:layout_alignParentLeft="true"
+                                       android:layout_marginStart="@dimen/_0dp"
+                                       android:layout_marginTop="@dimen/_0dp"
+                                       android:layout_marginEnd="@dimen/_0dp"
+                                       android:layout_marginBottom="@dimen/_0dp"
+                                       android:ellipsize="marquee"
+                                       android:singleLine="true"
+                                       android:text="@string/punch_in_time"
+                                       android:textSize="@dimen/_16sp" />
+                                   <com.royalitpark.employeemanagement.customviews.CustomTextView
+                                       android:id="@+id/txt_not_date"
+                                       style="@style/style_textview"
+                                       android:text=" 02:05 PM "
+                                       android:layout_margin="@dimen/_0dp"
+                                       android:layout_toRightOf="@+id/txt_not_title"
+                                       android:layout_width="wrap_content"
+                                       android:layout_alignParentRight="true"
+                                       android:textStyle="bold"
+                                       />
+
+                               </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/lnr_punch_out"
+                                    android:gravity="center_vertical"
+                                    android:visibility="gone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <com.royalitpark.employeemanagement.customviews.CustomTextView
+                                        style="@style/style_textview"
+                                        android:layout_width="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginStart="@dimen/_0dp"
+                                        android:layout_marginTop="@dimen/_0dp"
+                                        android:layout_marginEnd="@dimen/_0dp"
+                                        android:layout_marginBottom="@dimen/_0dp"
+                                        android:ellipsize="marquee"
+                                        android:singleLine="true"
+                                        android:text="@string/punch_out_time"
+                                        android:textSize="@dimen/_16sp" />
+                                    <com.royalitpark.employeemanagement.customviews.CustomTextView
+                                        android:id="@+id/txt_punch_out_time"
+                                        style="@style/style_textview"
+                                        android:text=" 02:05 PM "
+                                        android:layout_margin="@dimen/_0dp"
+                                        android:layout_toRightOf="@+id/txt_not_title"
+                                        android:layout_width="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:textStyle="bold"
+                                        />
+
+                                </LinearLayout>
+                                         <com.royalitpark.employeemanagement.customviews.CustomTextView
+                                                        android:id="@+id/txt_not_msg"
+                                                        android:layout_below="@+id/txt_not_title"
+                                                        style="@style/style_textview_small"
+                                                        android:text="Document_89256985.jpg"
+                                                        android:textStyle="bold"
+                                                        />
+
+                            </LinearLayout>
+
+
+              </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

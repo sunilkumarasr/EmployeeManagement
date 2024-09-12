@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.royalitpark.employeemanagement.ui.profile.BankAccountDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/img_corner_rectangle_small"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_16dp"
+        android:paddingRight="@dimen/_16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onBack"
+            android:padding="@dimen/_8dp">
+
+            <ImageView
+                android:id="@+id/img_menu"
+                android:layout_width="@dimen/_24dp"
+                android:layout_height="@dimen/_24dp"
+                android:src="@drawable/img_back_left"
+
+                />
+        </LinearLayout>
+
+        <com.royalitpark.employeemanagement.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_12dp"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/montserrat_regular"
+            android:singleLine="true"
+            android:text="@string/BankAccountDetails"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/_12dp" />
+
+        <com.royalitpark.employeemanagement.customviews.CustomTextView
+            style="@style/style_textview"
+            android:text="@string/BankName" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_bank_name"
+            style="@style/style_edittext"
+            android:background="@drawable/rectangle_edittext_bank"
+            android:hint="@string/BankName" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/_12dp" />
+
+        <com.royalitpark.employeemanagement.customviews.CustomTextView
+            style="@style/style_textview"
+            android:text="@string/AccountNumber" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_account_number"
+            style="@style/style_edittext"
+            android:background="@drawable/rectangle_edittext_bank"
+            android:hint="@string/AccountNumber"
+            android:maxLength="12" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/_12dp" />
+
+        <com.royalitpark.employeemanagement.customviews.CustomTextView
+            style="@style/style_textview"
+            android:text="@string/IFSCCode" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_ifsc"
+            style="@style/style_edittext"
+            android:background="@drawable/rectangle_edittext_bank"
+            android:hint="@string/IFSCCode"
+            android:textAllCaps="true"
+            android:maxLength="15"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/_12dp" />
+
+        <com.royalitpark.employeemanagement.customviews.CustomTextView
+            style="@style/style_textview"
+            android:text="@string/AccountHoldersName" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_empid"
+            style="@style/style_edittext"
+            android:background="@drawable/rectangle_edittext_bank"
+            android:hint="@string/AccountHoldersName"
+            android:imeOptions="actionDone" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/_20dp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_allow"
+        style="@style/style_button"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/rectangle_bio_data"
+        android:onClick="savedetails"
+        android:text="@string/SaveDetails"
+        android:textColor="@color/black" />
+</LinearLayout>
+              

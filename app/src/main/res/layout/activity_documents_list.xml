@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:orientation="vertical"
+    tools:context="com.royalitpark.employeemanagement.ui.documents.DocumentsListActivity">
+              <LinearLayout
+                            android:id="@+id/lnr_appbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="@drawable/img_corner_rectangle_small"
+                            android:paddingLeft="@dimen/_16dp"
+                            android:paddingRight="@dimen/_16dp"
+                            android:layout_marginLeft="-8dp"
+                            android:layout_marginRight="-8dp"
+                            android:gravity="center_vertical"
+                            android:minHeight="?attr/actionBarSize"
+                            android:orientation="horizontal"
+                            >
+                            <LinearLayout
+                                          android:onClick="onBack"
+                                          android:layout_width="wrap_content"
+                                          android:padding="@dimen/_8dp"
+                                          android:layout_height="wrap_content">
+                                          <ImageView
+                                                        android:id="@+id/img_menu"
+                                                        android:layout_width="@dimen/_24dp"
+                                                        android:layout_height="@dimen/_24dp"
+                                                        android:src="@drawable/img_back_left"
+
+                                                        />
+                            </LinearLayout>
+                            <com.royalitpark.employeemanagement.customviews.CustomTextView
+                                          android:fontFamily="@font/montserrat_regular"
+                                          android:layout_height="wrap_content"
+                                          android:layout_width="wrap_content"
+                                          android:text="@string/MyDocuments"
+                                          android:textSize="@dimen/_14sp"
+                                          android:layout_weight="1"
+                                          android:layout_marginLeft="@dimen/_12dp"
+                                          android:singleLine="true"
+                                          android:ellipsize="marquee"
+                                          android:textColor="@color/white"
+                                          />
+
+
+              </LinearLayout>
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:layout_margin="@dimen/_8dp"
+                 >
+                 <androidx.recyclerview.widget.RecyclerView
+                     android:id="@+id/recycler_document"
+                     android:layout_width="match_parent"
+                     android:layout_weight="1"
+
+                     android:layout_height="wrap_content"
+                     />
+                 <com.royalitpark.employeemanagement.customviews.CustomTextView
+                     android:id="@+id/txt_no_docs"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerInParent="true"
+                     android:text="No Documents uploaded"
+                     android:textStyle="bold"
+                     android:visibility="gone"
+                     android:textSize="25sp"
+                     android:fontFamily="@font/montserrat_regular"
+                     />
+
+             </RelativeLayout>
+              <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/rectangle_bio_data"
+                            android:gravity="center_vertical"
+                            android:onClick="addDocument"
+                            android:layout_margin="@dimen/_16dp"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                          android:layout_width="@dimen/_24dp"
+                                          android:layout_height="@dimen/_24dp"
+                                          android:src="@drawable/img_icon_add"
+                                          android:layout_marginLeft="@dimen/_12dp"
+                                          app:tint="@color/black"
+                                          />
+                            <View
+                                          android:layout_width="@dimen/_42dp"
+                                          android:layout_height="0dp"/>
+              <androidx.appcompat.widget.AppCompatButton android:id="@+id/btn_allow"
+                            style="@style/style_button"
+                            android:layout_gravity="center"
+                            android:text="@string/adddocument"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:background="@color/color_biodata"
+                            android:textStyle="bold"
+                            android:clickable="false"
+                            android:layout_margin="0dp" />
+                            <View
+                            android:layout_width="@dimen/_42dp"
+                            android:layout_height="0dp"/>
+                            />
+
+              </LinearLayout>
+
+
+</LinearLayout>

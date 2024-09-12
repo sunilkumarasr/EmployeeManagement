@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/_12dp"/>
+    <com.royalitpark.employeemanagement.customviews.CustomTextView
+        style="@style/style_textview"
+        android:text="@string/branch"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_branch"
+        style="@style/style_edittext"
+        android:background="@drawable/rectangle_edittext_white"
+        android:hint="@string/branch"
+        />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/_12dp"/>
+    <com.royalitpark.employeemanagement.customviews.CustomTextView
+        style="@style/style_textview"
+        android:text="@string/job_title"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_job_title"
+        style="@style/style_edittext"
+        android:background="@drawable/rectangle_edittext_white"
+        android:hint="@string/job_title"
+        />
+
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/_12dp"/>
+    <com.royalitpark.employeemanagement.customviews.CustomTextView
+        style="@style/style_textview"
+        android:text="@string/dateofjoining"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_doj"
+        style="@style/style_edittext"
+        android:background="@drawable/rectangle_edittext_white"
+        android:hint="@string/ddmmyy"
+        android:focusableInTouchMode="false"
+        android:clickable="true"
+        />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/_12dp"/>
+    <com.royalitpark.employeemanagement.customviews.CustomTextView
+        style="@style/style_textview"
+        android:text="@string/employee_id"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_empid"
+        style="@style/style_edittext"
+        android:background="@drawable/rectangle_edittext_white"
+        android:hint="@string/employee_id"
+
+        />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/_20dp"/>
+
+</LinearLayout>

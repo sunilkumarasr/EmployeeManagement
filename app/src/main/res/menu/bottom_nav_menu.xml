@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeAttendance"
+        android:title="@string/mark_attenndance"
+        android:icon="@drawable/fingerprint"/>
+    <item
+        android:id="@+id/chatFragment"
+        android:title="@string/attendance"
+        android:icon="@drawable/icon_bottom_attendance"/>
+    <item
+        android:id="@+id/postersFragment"
+        android:title="@string/Enquiry"
+        android:icon="@drawable/icon_bottom_enquiry"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:title="@string/profile"
+        android:icon="@drawable/icon_bottom_profile"/>
+</menu>

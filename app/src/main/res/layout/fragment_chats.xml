@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.royalitpark.employeemanagement.ui.attendance.ViewAttendanceActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:background="@color/color_attendance_for"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_12dp"
+            android:layout_height="@dimen/_12dp"
+            android:layout_marginLeft="@dimen/_16dp"
+
+            android:src="@drawable/icon_info" />
+
+        <com.royalitpark.employeemanagement.customviews.CustomTextView
+            style="@style/style_textview"
+            android:layout_weight="1"
+            android:text="@string/attendancefor"
+            android:textSize="@dimen/_16sp"
+
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/lnr_date_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_16dp"
+            android:background="@drawable/rectangle_edittext_white"
+            android:gravity="center"
+            android:padding="@dimen/_8dp">
+
+            <ImageView
+                android:layout_width="@dimen/_16dp"
+                android:layout_height="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_8dp"
+                android:src="@drawable/icon_cal" />
+
+            <com.royalitpark.employeemanagement.customviews.CustomTextView
+                android:id="@+id/txt_date"
+                style="@style/style_textview_small"
+                android:text="20-09-2023"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/_16dp"
+                android:layout_height="@dimen/_16dp"
+                android:layout_marginLeft="@dimen/_8dp"
+
+                android:src="@drawable/img_arrow_down" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_edittext_bank"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.royalitpark.employeemanagement.customviews.CustomTextView
+
+                style="@style/style_textview_small"
+                android:layout_width="match_parent"
+                android:background="@color/color_present"
+                android:gravity="center"
+                android:minHeight="@dimen/_30dp"
+                android:text="@string/present"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <com.royalitpark.employeemanagement.customviews.CustomTextView
+                android:id="@+id/txt_present"
+                style="@style/style_textview"
+                android:gravity="center"
+                android:minHeight="@dimen/_42dp"
+                android:text="0"
+                android:textColor="@color/color_present"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_edittext_bank"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.royalitpark.employeemanagement.customviews.CustomTextView
+
+                style="@style/style_textview_small"
+                android:layout_width="match_parent"
+                android:background="@color/color_absent"
+                android:gravity="center"
+                android:minHeight="@dimen/_30dp"
+                android:text="@string/absent"
+
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <com.royalitpark.employeemanagement.customviews.CustomTextView
+                android:id="@+id/txt_absent"
+                style="@style/style_textview"
+                android:gravity="center"
+                android:minHeight="@dimen/_42dp"
+                android:text="0"
+                android:textColor="@color/color_absent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_edittext_bank"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.royalitpark.employeemanagement.customviews.CustomTextView
+
+                style="@style/style_textview_small"
+                android:layout_width="match_parent"
+                android:background="@color/color_halfday"
+                android:gravity="center"
+                android:minHeight="@dimen/_30dp"
+                android:text="@string/halfdays"
+
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <com.royalitpark.employeemanagement.customviews.CustomTextView
+                android:id="@+id/txt_half_days"
+                style="@style/style_textview"
+                android:gravity="center"
+                android:minHeight="@dimen/_42dp"
+                android:text="0"
+                android:textColor="@color/color_halfday"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_edittext_bank"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.royalitpark.employeemanagement.customviews.CustomTextView
+
+                style="@style/style_textview_small"
+                android:layout_width="match_parent"
+                android:background="@color/color_paidleave"
+                android:gravity="center"
+                android:minHeight="@dimen/_30dp"
+                android:text="@string/paidleav"
+
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <com.royalitpark.employeemanagement.customviews.CustomTextView
+                android:id="@+id/txt_paid_leaves"
+                style="@style/style_textview"
+                android:gravity="center"
+                android:minHeight="@dimen/_42dp"
+                android:text="0"
+                android:textColor="@color/color_paidleave" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/grid_calender_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginRight="@dimen/_5dp"
+        android:numColumns="7"
+        android:verticalSpacing="@dimen/_8dp" />
+
+    <GridView
+        android:id="@+id/grid_calender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5dp"
+        android:layout_marginRight="@dimen/_5dp"
+        android:numColumns="7"
+        android:verticalSpacing="@dimen/_8dp" />
+
+
+</LinearLayout>
